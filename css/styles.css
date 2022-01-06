@@ -1,0 +1,169 @@
+/* ROOT */
+:root {
+  --white-color: #fff;
+  --text-color: #2b3939;
+  --background-color: #effafa;
+  --button-background-color: #5ca5a5;
+}
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CONTAINER */
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+/* BUTTON */
+.button {
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: var(--button-background-color);
+  background-color: #5ca5a51a;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* HEADER */
+.header {
+  background-image: url("../images/header-bg.svg");
+  height: 156px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.job-listings-content {
+  margin: 76px 0 120px;
+}
+
+.job-listings-box {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 40px;
+}
+
+.job-listings-box:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.job-listings-box-info {
+  display: flex;
+  align-items: center;
+}
+
+.job-listings-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.job-listings-info-header {
+  display: flex;
+  align-items: center;
+}
+
+.job-listings-box-info-header-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: var(--button-background-color);
+  margin-right: 16px;
+}
+
+.job-listings-box-info-header-btn {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: -0.085px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  border-radius: 12px;
+  padding: 6px 8px 4px;
+}
+
+.job-listings-box-info-header-btn-first {
+  background-color: var(--button-background-color);
+  margin-right: 8px;
+}
+
+.job-listings-box-info-header-btn-second {
+  background-color: var(--text-color);
+}
+
+.job-listings-box-info-title {
+  margin: 8px 0;
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.job-listings-box-footer {
+  display: flex;
+  align-items: center;
+  color: #7c8f8f;
+}
+.job-listings-box-footer-time {
+  font-size: 15px;
+  letter-spacing: -0.12px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.job-listings-box-footer-time:not(:last-child)::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #b7c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.job-listings-box-technologies-text:not(:last-child) {
+  margin-right: 16px;
+}
