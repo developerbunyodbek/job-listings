@@ -37,6 +37,17 @@ img {
   object-fit: cover;
 }
 
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* CONTAINER */
 .container {
   width: 1150px;
@@ -122,6 +133,10 @@ img {
   color: var(--white-color);
   border-radius: 12px;
   padding: 6px 8px 4px;
+}
+
+.job-listings-box:first-child, .job-listings-box:nth-child(2) {
+  border-left: 5px solid var(--button-background-color);
 }
 
 .job-listings-box-info-header-btn-first {
